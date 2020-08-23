@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: blog-demo
-tagline: 博客示例
+heroText: syb-blog
+tagline: syb
 actionText: 快速上手 →
 actionLink: /
 features:
