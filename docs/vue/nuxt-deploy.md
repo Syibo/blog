@@ -22,17 +22,17 @@ vue部署一般前端涉及太多，前端使用build打包生成dist文件夹�
 --name "syb-life"是启动的服务名称 run start是我们配置的命令  
 
 package.json  
-```js
+```json
 "name": "syb-life",
 "version": "1.0.0",
 "description": "syb-life",
 "author": "shenyibo",
 "private": true,
 "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "PORT=3000 nuxt start",
-    "generate": "nuxt generate"
+  "dev": "nuxt",
+  "build": "nuxt build",
+  "start": "PORT=3000 nuxt start",
+  "generate": "nuxt generate"
 },
 ```
 运行之前已经起了记得 pm2 delete id一下
@@ -44,9 +44,9 @@ server {
   server_name  test.ssr.net;
   root D:/nginx/html;
   location / {
-       proxy_pass http://127.0.0.1:3000 ;
-       proxy_set_header Host $host;
-       proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_pass http://127.0.0.1:3000 ;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $remote_addr;
   }
 }
 ```
