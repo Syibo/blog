@@ -52,7 +52,7 @@ module.exports = {
         }
       ]
     },
-    record: '京ICP备17067634号-1',
+    record: '赣ICP备20008187号-1',
     author: 'syb',
   }
 }
