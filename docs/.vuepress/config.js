@@ -1,11 +1,14 @@
 module.exports = {
+  head: [
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+  ],
   base: '/',
   title: 'syb&life',
   description: ' ',
   theme: 'reco',
   themeConfig: {
     type: 'blog',
-    huawei: false,
+    huawei: true,
     authorAvatar: '/head.jpg',
     repo: 'https://github.com/Syibo',
     repoLabel: 'gitHub',
@@ -29,8 +32,7 @@ module.exports = {
     logo: '',
     search: true,
     searchMaxSuggestions: 10,
-    // 自动形成侧边导航
-    sidebarDepth: 1,
+    sidebarDepth: 2,
     displayAllHeaders: false,
     sidebar: {
       '/life/': [
@@ -39,6 +41,13 @@ module.exports = {
           collapsable: true,
           children: [
             'music/vae',
+          ]
+        },
+        {
+          title: 'travel',
+          collapsable: true,
+          children: [
+            'travel/qingdao',
           ]
         }
       ]
