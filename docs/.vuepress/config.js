@@ -48,6 +48,7 @@ module.exports = {
           collapsable: true,
           children: [
             'travel/qingdao',
+            'travel/xiamen'
           ]
         }
       ]
